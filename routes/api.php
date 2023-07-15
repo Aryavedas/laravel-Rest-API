@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/posts', [PostController::class, 'getPost']);
+Route::get('/post/{id}', [PostController::class, 'show']);
